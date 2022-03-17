@@ -5,17 +5,18 @@ import 'package:flutter/foundation.dart';
 class LocationModel {
   final double? latitude;
   final double? longitude;
-  final String? adress;
+  final String? address;
 
-  LocationModel(
-      {@required this.latitude, @required this.longitude, this.adress});
+  const LocationModel(
+      {@required this.latitude, @required this.longitude, this.address});
 }
 
 class PhotoModel {
   final String? id;
   final LocationModel? location;
+  final String? title;
   final File? image;
 
   PhotoModel(
-      {@required this.id, @required this.location, @required this.image});
+      {@required this.id, @required this.location, @required this.title, @required this.image});
 }
