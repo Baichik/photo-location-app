@@ -28,7 +28,9 @@ class _AddPlaceState extends State<AddPlace> {
   }
 
   void _savePlace() {
-    if (_titleController.text.isEmpty || _pickedImage == null || _pickedLocation == null) return;
+    if (_titleController.text.isEmpty ||
+        _pickedImage == null ||
+        _pickedLocation == null) return;
     Provider.of<GreatPlaces>(context, listen: false)
         .addPlace(_titleController.text, _pickedImage!, _pickedLocation!);
     Navigator.of(context).pop();
@@ -37,6 +39,7 @@ class _AddPlaceState extends State<AddPlace> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomInset: false,
         appBar: AppBar(title: const Text('Add a new place')),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

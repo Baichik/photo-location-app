@@ -5,7 +5,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
 import 'package:photo_location_app/helpers/network_helper.dart';
 import 'package:photo_location_app/models/photo_model.dart';
-import 'package:photo_location_app/screens/map-screen.dart';
+import 'package:photo_location_app/screens/map_screen.dart';
 
 class PlaceInput extends StatefulWidget {
   final Function onSlect;
@@ -76,14 +76,6 @@ class _PlaceInputState extends State<PlaceInput> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              // FlatButton.icon(
-              //   icon: const Icon(
-              //     Icons.location_on,
-              //   ),
-              //   label: const Text('Current location'),
-              //   textColor: Theme.of(context).primaryColor,
-              //   onPressed: _getLocation,
-              // ),
               FlatButton.icon(
                 icon: const Icon(Icons.map_outlined),
                 label: const Text('Select on map '),

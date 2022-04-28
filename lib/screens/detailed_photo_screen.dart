@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:photo_location_app/providers/great_places.dart';
-import 'package:photo_location_app/screens/map-screen.dart';
+import 'package:photo_location_app/screens/map_screen.dart';
 import 'package:provider/provider.dart';
 
 class DetailedPhotoScreen extends StatelessWidget {

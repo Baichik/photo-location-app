@@ -49,9 +49,10 @@ class _MapScreenState extends State<MapScreen> {
         onTap: _selectLocation,
         markers: {
           Marker(
-              markerId: const MarkerId('m1'),
-              position:
-                  LatLng(_pickedLocation!.latitude, _pickedLocation!.longitude))
+            markerId: const MarkerId('m1'),
+            position:
+                LatLng(_pickedLocation!.latitude, _pickedLocation!.longitude),
+          )
         },
         initialCameraPosition: CameraPosition(
           target: LatLng(widget.initialLocation.latitude!,
